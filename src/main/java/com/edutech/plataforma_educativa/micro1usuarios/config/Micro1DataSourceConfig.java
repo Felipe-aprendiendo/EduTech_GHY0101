@@ -65,6 +65,7 @@ public class Micro1DataSourceConfig {
     }
 
     @Bean(name = "micro1JpaProperties")
+    @Primary
     @ConfigurationProperties(prefix = "spring.jpa.micro1")
     public JpaProperties micro1JpaProperties() {
         return new JpaProperties();
